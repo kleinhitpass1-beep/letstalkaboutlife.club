@@ -256,3 +256,16 @@ a:hover { text-decoration: underline; }
   .heroLogo { justify-self: start; }
   .grid { grid-template-columns: 1fr; }
 }
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.logoImage {
+  width: 160px;
+  height: auto;
+  margin-top: 10px;
+}
