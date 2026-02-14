@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>letstalkaboutlife.club</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="container navInner">
+        <div class="brand">letstalkaboutlife.club</div>
+        <nav class="navLinks">
+          <a href="#about">Über</a>
+          <a href="#topics">Themen</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container heroInner">
+          <div class="heroTop">
+            <div class="heroTitleBlock">
+              <h1 class="heroTitle">Lets Talk About Life Club</h1>
+              <p class="heroSubtitle">
+                Lebensnahe Gespräche über mentale Gesundheit, Identität, Wachstum und digitale Zukunft.
+              </p>
+
+              <div class="heroActions">
+                <a class="button buttonPrimary" href="#contact">Kontakt</a>
+                <a class="button buttonGhost" href="#topics">Mehr erfahren</a>
+              </div>
+            </div>
+
+            <div class="heroLogo" aria-label="Logo Platzhalter">
+              <div class="logoBox">
+                <span class="logoMark">L</span>
+              </div>
+              <p class="logoHint">Logo hier ersetzen</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="intro">
+        <div class="container introInner">
+          <h2 class="introTitle">Eintauchen in lebensnahe Gespräche</h2>
+          <p class="introText">
+            Getrieben von der Faszination für Geschichten, die das Leben schreibt, lade ich dich ein in die Welt von
+            Lets Talk About Life Club. Von mentaler Gesundheit über Digitalisierung bis hin zu Unternehmertum
+            erforschen wir gemeinsam Höhen und Tiefe, die das Leben mit sich bringt.
+          </p>
+        </div>
+      </section>
+
+      <section id="topics" class="gridSection">
+        <div class="container">
+          <div class="grid">
+            <article class="card">
+              <div class="cardMedia mediaPortrait" role="img" aria-label="Porträt Platzhalter"></div>
+              <div class="cardBody">
+                <h3 class="cardTitle">Maurice</h3>
+                <p class="cardText">
+                  Host mit Fokus auf klare Fragen, echte Tiefe und praktische Perspektiven.
+                </p>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="cardMedia mediaAbstract" role="img" aria-label="Bild Platzhalter"></div>
+              <div class="cardBody">
+                <h3 class="cardTitle">Unsere Themen</h3>
+                <p class="cardText">
+                  Mentale Gesundheit, Identität, Adoption, Digitalisierung, Unternehmertum und persönliche Entwicklung.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container contactInner">
+          <h2 class="contactTitle">Kontakt</h2>
+          <p class="contactText">
+            Wenn du Gast sein möchtest oder eine Kooperation planst, schreibe mir.
+          </p>
+
+          <div class="contactBox">
+            <p class="contactLabel">E Mail</p>
+            <a class="contactLink" href="mailto:hello@letstalkaboutlife.club">hello@letstalkaboutlife.club</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footerInner">
+        <p class="footerText">© <span id="year"></span> letstalkaboutlife.club</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
