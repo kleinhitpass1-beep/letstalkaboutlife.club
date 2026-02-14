@@ -233,6 +233,9 @@ a:hover{ text-decoration:none; }
   gap: 10px;
   flex-wrap: wrap;
 }
+.sectionText + .sectionText{
+  margin-top:18px;
+}
 
 .newsletterForm{
   margin-top: 18px;
