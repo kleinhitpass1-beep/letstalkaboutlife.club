@@ -291,3 +291,22 @@ a:hover { text-decoration: underline; }
   gap: 14px;
   flex-wrap: wrap;
 }
+.latestEpisode {
+  padding: 60px 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.latestEpisode .sectionTitle {
+  color: #fff;
+}
+
+.episodeCard {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.episodeCard p {
+  color: rgba(255,255,255,0.8);
+}
