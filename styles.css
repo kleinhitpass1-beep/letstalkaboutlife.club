@@ -291,3 +291,25 @@ a:hover { text-decoration: underline; }
   gap: 14px;
   flex-wrap: wrap;
 }
+.podcastSection {
+  padding: 60px 0;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.sectionText {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.podcastLinks {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
