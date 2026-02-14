@@ -160,4 +160,39 @@
 
 </body>
 </html>
+<script>
+const feedURL = "https://api.rss2json.com/v1/api.json?rss_url=https://letstalkaboutlifeclub.podigee.io/feed/mp3";
+
+fetch(feedURL)
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("episodes");
+    const episodes = data.items.slice(0,3);
+
+    episodes.forEach(ep => {
+      const card = document.createElement("article");
+      card.className = "card";
+
+      card.innerHTML = `
+        <div class="cardTop">
+          <h3 class="cardTitle">${ep.title}</h3>
+          <p class="cardText">
+            ${ep.description.replace(/(<([^>]+)>)/gi, "").substring(0,140)}...
+          </p>
+        </div>
+        <div class="cardBottom">
+          <a class="button buttonPrimary"
+             href="${ep.link}"
+             target="_blank"
+             rel="noopener">Jetzt hören</a>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+  })
+  .catch(error => {
+    console.error("RSS Fehler:", error);
+  });
+</script>
 
