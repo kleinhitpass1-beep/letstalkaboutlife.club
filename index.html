@@ -232,7 +232,29 @@ fetch(feedURL)
     console.error("RSS Fehler:", error);
   });
 </script>
-  
+ <script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte eine Ländervorwahl aus.';
+  window.LOCALE = 'de';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
+    "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein. ";
+  window.GENERIC_INVALID_MESSAGE =
+    "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+
+  window.translation = {
+    common: {
+      selectedList: '{quantity} Liste ausgewählt',
+      selectedLists: '{quantity} Listen ausgewählt',
+      selectedOption: '{quantity} ausgewählt',
+      selectedOptions: '{quantity} ausgewählt',
+    }
+  };
+
+  var AUTOHIDE = Boolean(0);
+</script>
+
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+ 
 </body>
 </html>
 
