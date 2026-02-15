@@ -117,35 +117,73 @@
 
 
   <!-- NEWSLETTER SECTION -->
-  <section class="section" id="newsletter">
-    <div class="container">
-      <h2 class="sectionTitle">Newsletter</h2>
-      <p class="sectionText">
-        Kurze Impulse, neue Folgen und Gedanken aus dem Club.
-        Klar. Selten. Wertvoll.
-      </p>
+<section class="section" id="newsletter">
+  <div class="container">
+    <h2 class="sectionTitle">Newsletter</h2>
+    <p class="sectionText">
+      Kurze Impulse, neue Folgen und Gedanken aus dem Club. Klar. Selten. Wertvoll.
+    </p>
 
-      <form class="newsletterForm"
-            action="mailto:mail@letstalkaboutlife.club"
-            method="post"
-            enctype="text/plain">
+    <div class="brevoWrap" style="margin-top:18px;">
+      <div class="sib-form">
+        <div id="sib-form-container" class="sib-form-container">
+          <div id="error-message" class="sib-form-message-panel">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <span class="sib-form-message-panel__inner-text">
+                Deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.
+              </span>
+            </div>
+          </div>
 
-        <input class="input"
-               type="email"
-               name="email"
-               placeholder="Deine E Mail Adresse"
-               required>
+          <div id="success-message" class="sib-form-message-panel">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+              <span class="sib-form-message-panel__inner-text">
+                Deine Anmeldung war erfolgreich.
+              </span>
+            </div>
+          </div>
 
-        <button class="button buttonPrimary" type="submit">
-          Anmelden
-        </button>
-      </form>
+          <div id="sib-container" class="sib-container--large sib-container--vertical">
+            <form id="sib-form" method="POST"
+              action="https://26dcce27.sibforms.com/serve/MUIFALkAGdbOUSaTYw1-K0UWipj0CmFxZj4QJgQjk5y09rRDW9gSrEKyXDC4hejIDEg1LY9c0pwAJ-2vZG910-9in_rGOOj03x9X_Vh6PWrjCwvOaPDumBYqzbCWAcnMtwVxYvb2goXJaVgJII_M6iVtpQPqZ5_YNf9CCx7BiOpD16T-B0EwMZJP_8yEzGxcynn5i-exWZOWDkAySQ=="
+              data-type="subscription">
 
-      <p class="sectionText" style="margin-top:14px; font-size:14px;">
-        Hinweis: Übergangslösung. Für professionelles Newsletter Setup richten wir Double Opt In ein.
-      </p>
+              <div class="sib-input sib-form-block">
+                <div class="form__entry entry_block">
+                  <div class="form__label-row">
+                    <label class="entry__label" for="EMAIL" data-required="*">
+                      E Mail Adresse
+                    </label>
+
+                    <div class="entry__field">
+                      <input class="input" type="email" id="EMAIL" name="EMAIL"
+                        autocomplete="email" placeholder="mail@beispiel.de" data-required="true" required />
+                    </div>
+                  </div>
+
+                  <label class="entry__error entry__error--primary"></label>
+                </div>
+              </div>
+
+              <div class="sib-form-block" style="margin-top:10px;">
+                <button class="button buttonPrimary" form="sib-form" type="submit">
+                  Anmelden
+                </button>
+              </div>
+
+              <input type="text" name="email_address_check" value="" class="input--hidden">
+              <input type="hidden" name="locale" value="de">
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+
+    <p class="sectionText" style="margin-top:14px; font-size:14px;">
+      Du erhältst eine Bestätigungsmail. Erst danach bist du angemeldet.
+    </p>
+  </div>
+</section>
 
 </main>
 
