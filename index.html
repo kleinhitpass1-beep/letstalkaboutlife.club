@@ -113,7 +113,7 @@
     </div>
   </section>
 
-  <!-- NEWSLETTER SECTION (Brevo: stable + clickable) -->
+  <!-- NEWSLETTER SECTION -->
   <section class="section" id="newsletter">
     <div class="container">
       <h2 class="sectionTitle">Newsletter</h2>
@@ -122,39 +122,74 @@
       </p>
 
       <div class="brevoWrap" style="margin-top:18px;">
+
         <div class="sib-form" style="text-align:center;">
           <div id="sib-form-container" class="sib-form-container">
 
-            <!-- Start hidden to avoid overlay blocking clicks -->
-            <div id="error-message" class="sib-form-message-panel" style="display:none;"></div>
-            <div id="success-message" class="sib-form-message-panel" style="display:none;"></div>
+            <div id="error-message" class="sib-form-message-panel">
+              <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                <span class="sib-form-message-panel__inner-text">
+                  Deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.
+                </span>
+              </div>
+            </div>
+
+            <div id="success-message" class="sib-form-message-panel">
+              <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                <span class="sib-form-message-panel__inner-text">
+                  Danke. Bitte bestätige jetzt die E Mail in deinem Postfach.
+                </span>
+              </div>
+            </div>
 
             <div id="sib-container" class="sib-container--large sib-container--vertical">
               <form id="sib-form" method="POST"
-                action="https://26dcce27.sibforms.com/serve/MUIFALkAGdbOUSaTYw1-K0UWipj0CmFxZj4QJgQjk5y09rRDW9gSrEKyXDC4hejIDEg1LY9c0pwAJ-2vZG910-9in_rGOOj03x9X_Vh6PWrjCwvOaPDumBYqzbCWAcnMtwVxYvb2goXJaVgJII_M6iVtpQPqZ5_YNf9CCx7BiOpD16T-B0EwMZJP_8yEzGxcynn5i-exWZOWDkAySQ=="
-                data-type="subscription">
+                    action="https://26dcce27.sibforms.com/serve/MUIFALkAGdbOUSaTYw1-K0UWipj0CmFxZj4QJgQjk5y09rRDW9gSrEKyXDC4hejIDEg1LY9c0pwAJ-2vZG910-9in_rGOOj03x9X_Vh6PWrjCwvOaPDumBYqzbCWAcnMtwVxYvb2goXJaVgJII_M6iVtpQPqZ5_YNf9CCx7BiOpD16T-B0EwMZJP_8yEzGxcynn5i-exWZOWDkAySQ=="
+                    data-type="subscription">
 
-                <div class="brevoRow">
-                  <input class="input brevoInput" type="email" id="EMAIL" name="EMAIL"
-                    autocomplete="email" placeholder="mail@beispiel.de" required>
+                <div style="padding: 8px 0;">
+                  <div class="sib-input sib-form-block">
+                    <div class="form__entry entry_block">
+                      <div class="form__label-row">
+                        <label class="entry__label" for="EMAIL" data-required="*">
+                          Gib deine E Mail Adresse ein, um dich anzumelden
+                        </label>
 
-                  <button class="button buttonPrimary brevoButton" type="submit">
-                    Anmelden
-                  </button>
+                        <div class="entry__field">
+                          <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="mail@beispiel.de" data-required="true" required />
+                        </div>
+                      </div>
+
+                      <label class="entry__error entry__error--primary"></label>
+                      <label class="entry__specification">
+                        Du erhältst eine Bestätigungsmail. Erst danach bist du angemeldet.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="padding: 8px 0;">
+                  <div class="sib-form-block" style="text-align:center;">
+                    <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+                      <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                        <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"></path>
+                      </svg>
+                      Anmelden
+                    </button>
+                  </div>
                 </div>
 
                 <input type="text" name="email_address_check" value="" class="input--hidden">
                 <input type="hidden" name="locale" value="de">
+
               </form>
             </div>
 
           </div>
         </div>
+
       </div>
 
-      <p class="sectionText" style="margin-top:14px; font-size:14px;">
-        Du erhältst eine Bestätigungsmail. Erst danach bist du angemeldet.
-      </p>
     </div>
   </section>
 
@@ -212,11 +247,9 @@
 <script>
   window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte eine Ländervorwahl aus.';
   window.LOCALE = 'de';
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
-    "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
   window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein. ";
-  window.GENERIC_INVALID_MESSAGE =
-    "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.GENERIC_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
   window.translation = {
     common: {
       selectedList: '{quantity} Liste ausgewählt',
