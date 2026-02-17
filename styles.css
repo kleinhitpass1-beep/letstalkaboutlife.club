@@ -338,3 +338,43 @@ a:hover{ text-decoration:none; }
   .heroGrid{ grid-template-columns: 1fr; }
   .grid2{ grid-template-columns: 1fr; }
 }
+/* Brevo optisch in LTALC Stil */
+.brevoWrap .sib-form,
+.brevoWrap #sib-form-container{
+  background: transparent !important;
+}
+
+.brevoWrap #sib-container{
+  max-width: 620px !important;
+  margin: 0 auto !important;
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--line) !important;
+  box-shadow: var(--shadow) !important;
+}
+
+.brevoWrap .entry__label{
+  font-family: inherit !important;
+  color: var(--fg) !important;
+  font-weight: 700 !important;
+}
+
+.brevoWrap .entry__specification{
+  font-family: inherit !important;
+  color: var(--muted) !important;
+}
+
+.brevoWrap .sib-form-block__button{
+  border-radius: 999px !important;
+  background: var(--fg) !important;
+  color: var(--bg) !important;
+  font-family: inherit !important;
+  font-weight: 650 !important;
+  border: 1px solid var(--fg) !important;
+}
+
+.brevoWrap .sib-form-message-panel{
+  max-width: 620px !important;
+  margin: 14px auto 0 auto !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow) !important;
+}
