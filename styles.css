@@ -256,30 +256,41 @@ a:hover{ text-decoration:none; }
   font-size: 14px;
 }
 
-/* Brevo: minimal safe styling (no pointer events / no z-index games) */
+/* Brevo: nur optische, sichere Anpassungen */
+.brevoWrap #sib-form-container{
+  max-width: 620px;
+  margin: 0 auto;
+}
+
 .brevoWrap #sib-container{
   max-width: 620px;
   margin: 0 auto;
 }
 
-/* Keep Brevo panels from blocking clicks while empty */
-.brevoWrap #error-message:empty,
-.brevoWrap #success-message:empty{
+.brevoWrap .entry__label,
+.brevoWrap .entry__specification,
+.brevoWrap .sib-form-message-panel__inner-text{
+  font-family: inherit !important;
+}
+
+.brevoWrap .entry__label{
+  color: var(--fg) !important;
+  font-weight: 700 !important;
+}
+
+.brevoWrap .entry__specification{
+  color: var(--muted) !important;
+}
+
+/* Button optisch passend, ohne Funktion zu beeinflussen */
+.brevoWrap .sib-form-block__button{
+  border-radius: 999px !important;
+}
+
+/* Erfolg und Fehler Panels nicht klickblockend, wenn leer */
+#success-message:empty,
+#error-message:empty{
   display:none !important;
-}
-
-/* Our row layout for input + button */
-.brevoRow{
-  display:flex;
-  gap: 10px;
-  justify-content:flex-start;
-  align-items:center;
-  flex-wrap:wrap;
-}
-
-/* Ensure clickable */
-.brevoButton{
-  cursor:pointer;
 }
 
 @media (max-width: 920px){
