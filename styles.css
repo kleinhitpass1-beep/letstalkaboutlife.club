@@ -378,3 +378,22 @@ a:hover{ text-decoration:none; }
   border-radius: var(--radius) !important;
   box-shadow: var(--shadow) !important;
 }
+/* Brevo: Clickability Fix */
+.brevoWrap, .brevoWrap *{
+  pointer-events: auto;
+}
+
+.brevoWrap #sib-container{
+  position: relative;
+  z-index: 1;
+}
+
+.brevoWrap .sib-form-message-panel{
+  position: relative;
+  z-index: 2;
+}
+
+.brevoWrap .sib-form-block__button{
+  cursor: pointer;
+  pointer-events: auto !important;
+}
