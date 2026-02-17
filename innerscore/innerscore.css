@@ -1,0 +1,210 @@
+/* ===================================
+   innerscore.css
+   Nur Erweiterungen – baut auf styles.css auf
+   =================================== */
+
+/* ---- HERO DARK ---- */
+.is-hero-dark {
+  background: #0a0a0a;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+/* ---- ACCENT BUTTON ---- */
+.button.is-accent {
+  background: #d4541a;
+  border-color: #d4541a;
+  color: #fff;
+}
+.button.is-accent:hover {
+  background: #b8431300;
+  border-color: #fff;
+  color: #fff;
+}
+
+.button.is-ghost-light {
+  border-color: rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.7);
+}
+.button.is-ghost-light:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* ---- DARK HERO CARD ---- */
+.heroCard.is-dark-card {
+  background: #141414;
+  border-color: #2a2a2a;
+  box-shadow: none;
+}
+
+/* ---- STATS GRID ---- */
+.is-stats-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 8px 0;
+}
+
+.is-stat-num {
+  display: block;
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #c8a97e;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.is-stat-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.4;
+}
+
+/* ---- QUOTE CARD ---- */
+.is-quote-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  background: #fafafa;
+}
+
+.is-blockquote {
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: #0a0a0a;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+  border-left: 3px solid #d4541a;
+  padding-left: 20px;
+}
+
+.is-cite {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+  padding-left: 20px;
+  display: block;
+}
+
+/* ---- STEP CARDS ---- */
+.is-step-card {
+  background: #141414 !important;
+  border-color: #2a2a2a !important;
+}
+
+.is-step-num {
+  display: block;
+  font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgba(212,84,26,0.3);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.is-step-card .cardTitle {
+  color: #fff;
+}
+
+.is-step-card .cardText {
+  color: rgba(255,255,255,0.55);
+}
+
+/* ---- FÜR WEN LIST ---- */
+.is-forwho-list {
+  list-style: none;
+  margin: 24px 0 0 0;
+  padding: 0;
+}
+
+.is-forwho-list li {
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.6;
+  padding: 18px 0 18px 28px;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.is-forwho-list li:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.is-forwho-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #d4541a;
+}
+
+.is-forwho-list li:hover {
+  color: #0a0a0a;
+}
+
+/* ---- WAITLIST FORM ---- */
+.is-form-wrap {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.is-form-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.is-email-input {
+  flex: 1;
+  min-width: 220px;
+  background: rgba(255,255,255,0.07) !important;
+  border-color: rgba(255,255,255,0.2) !important;
+  color: #fff !important;
+  border-radius: 999px;
+}
+
+.is-email-input::placeholder {
+  color: rgba(255,255,255,0.35) !important;
+}
+
+.is-email-input:focus {
+  border-color: #d4541a !important;
+  outline: none;
+}
+
+.is-form-hint {
+  font-size: 13px !important;
+  color: rgba(255,255,255,0.3) !important;
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* ---- SCROLL ANIMATIONS ---- */
+.is-animate {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.is-animate.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 920px) {
+  .is-stats-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .is-stat { flex: 1; min-width: 100px; }
+  .is-form-group { flex-direction: column; }
+  .is-email-input { min-width: unset; }
+}
