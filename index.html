@@ -25,95 +25,138 @@
 
 <main>
 
-<section class="hero">
-  <div class="container">
-    <div class="heroGrid">
-      <div>
-        <p class="kicker">Podcast</p>
-        <h1 class="h1">Lets Talk About Life Club</h1>
-        <p class="lead">
-          Gespräche über mentale Gesundheit, Identität, Depression,
-          Digitalisierung und persönliches Wachstum.
-        </p>
-        <div class="actions">
-          <a class="button buttonPrimary" href="#podcast">Podcast hören</a>
-          <a class="button buttonGhost" href="#newsletter">Newsletter</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="heroGrid">
+
+        <div>
+          <p class="kicker">Podcast</p>
+          <h1 class="h1">Lets Talk About Life Club</h1>
+
+          <p class="lead">
+            Gespräche über mentale Gesundheit, Identität, Depression,
+            Digitalisierung und persönliches Wachstum.
+          </p>
+
+          <div class="actions">
+            <a class="button buttonPrimary" href="#podcast">Podcast hören</a>
+            <a class="button buttonGhost" href="#newsletter">Newsletter</a>
+          </div>
         </div>
-      </div>
 
-      <div class="heroCard">
-        <div class="logoWrap">
-          <img class="logoImage" src="logo-ltalc.png" alt="Lets Talk About Life Club Logo">
-        </div>
-        <div class="miniLinks">
-          <a href="https://open.spotify.com/show/6SxeN512t1m2wNEXeImI2o" target="_blank">Spotify</a>
-          <a href="https://podcasts.apple.com/us/podcast/lets-talk-about-life-club/id1692996660" target="_blank">Apple</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section sectionBlack" id="about">
-  <div class="container">
-    <h2 class="sectionTitle">Echte Gespräche. Klare Perspektiven.</h2>
-    <p class="sectionText">
-      Lets Talk About Life Club ist ein Raum für Tiefe ohne Drama.
-      Für Reflexion ohne Kitsch.
-      Für Fortschritt ohne Lärm.
-    </p>
-  </div>
-</section>
-
-<section class="section" id="podcast">
-  <div class="container">
-    <h2 class="sectionTitle">Podcast</h2>
-    <p class="sectionText">Die neuesten Episoden aus dem Club.</p>
-    <div id="episodes" class="grid2" style="margin-top:26px;"></div>
-  </div>
-</section>
-
-<section class="section" id="newsletter">
-  <div class="container">
-    <h2 class="sectionTitle">Newsletter</h2>
-    <p class="sectionText">
-      Kurze Impulse, neue Folgen und Gedanken aus dem Club.
-    </p>
-
-    <!-- Brevo ORIGINAL -->
-    <div style="margin-top:24px;">
-      <div class="sib-form">
-        <div id="sib-form-container" class="sib-form-container">
-
-          <div id="error-message" class="sib-form-message-panel"></div>
-          <div id="success-message" class="sib-form-message-panel"></div>
-
-          <div id="sib-container" class="sib-container--large sib-container--vertical">
-            <form id="sib-form" method="POST"
-              action="https://26dcce27.sibforms.com/serve/MUIFALkAGdbOUSaTYw1-K0UWipj0CmFxZj4QJgQjk5y09rRDW9gSrEKyXDC4hejIDEg1LY9c0pwAJ-2vZG910-9in_rGOOj03x9X_Vh6PWrjCwvOaPDumBYqzbCWAcnMtwVxYvb2goXJaVgJII_M6iVtpQPqZ5_YNf9CCx7BiOpD16T-B0EwMZJP_8yEzGxcynn5i-exWZOWDkAySQ=="
-              data-type="subscription">
-
-              <input type="email" id="EMAIL" name="EMAIL"
-                placeholder="mail@beispiel.de"
-                required
-                style="padding:14px 16px; border-radius:999px; border:1px solid #e9e9e9; min-width:260px;">
-
-              <button type="submit"
-                style="margin-left:10px; padding:14px 20px; border-radius:999px; border:none; background:#000; color:#fff; cursor:pointer;">
-                Anmelden
-              </button>
-
-              <input type="hidden" name="locale" value="de">
-              <input type="text" name="email_address_check" value="" class="input--hidden">
-            </form>
+        <div class="heroCard">
+          <div class="logoWrap">
+            <img class="logoImage" src="logo-ltalc.png" alt="Lets Talk About Life Club Logo">
           </div>
 
+          <div class="miniLinks">
+            <a href="https://open.spotify.com/show/6SxeN512t1m2wNEXeImI2o" target="_blank" rel="noopener">Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/lets-talk-about-life-club/id1692996660" target="_blank" rel="noopener">Apple</a>
+          </div>
         </div>
+
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- ABOUT SECTION -->
+  <section class="section sectionBlack" id="about">
+    <div class="container">
+      <h2 class="sectionTitle">Echte Gespräche. Klare Perspektiven.</h2>
+      <p class="sectionText">
+        Lets Talk About Life Club ist ein Raum für Tiefe ohne Drama.
+        Für Reflexion ohne Kitsch.
+        Für Fortschritt ohne Lärm.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="about-maurice">
+    <div class="container narrow center">
+      <h2 class="sectionTitle">Über Maurice</h2>
+
+      <p class="sectionText" style="margin-top:18px;">
+        Ich spreche über mentale Gesundheit, Identität und persönliche
+        Entwicklung nicht aus Distanz, sondern aus Erfahrung.
+      </p>
+
+      <p class="sectionText" style="margin-top:18px;">
+        Lets Talk About Life Club ist mein Raum für ehrliche Reflexion.
+        Für Gespräche, die nicht laut sein müssen, um relevant zu sein.
+      </p>
+    </div>
+  </section>
+
+  <!-- PODCAST SECTION -->
+  <section class="section" id="podcast">
+    <div class="container">
+      <h2 class="sectionTitle">Podcast</h2>
+      <p class="sectionText">
+        Die neuesten Episoden aus dem Club.
+      </p>
+
+      <div id="episodes" class="grid2" style="margin-top:26px;"></div>
+
+      <div style="margin-top:40px; text-align:center;">
+        <a class="button buttonPrimary"
+           href="https://open.spotify.com/show/6SxeN512t1m2wNEXeImI2o"
+           target="_blank"
+           rel="noopener">Spotify</a>
+
+        <a class="button buttonGhost"
+           href="https://podcasts.apple.com/us/podcast/lets-talk-about-life-club/id1692996660"
+           target="_blank"
+           rel="noopener">Apple Podcasts</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION (Brevo: stable + clickable) -->
+  <section class="section" id="newsletter">
+    <div class="container">
+      <h2 class="sectionTitle">Newsletter</h2>
+      <p class="sectionText">
+        Kurze Impulse, neue Folgen und Gedanken aus dem Club. Klar. Selten. Wertvoll.
+      </p>
+
+      <div class="brevoWrap" style="margin-top:18px;">
+        <div class="sib-form" style="text-align:center;">
+          <div id="sib-form-container" class="sib-form-container">
+
+            <!-- Start hidden to avoid overlay blocking clicks -->
+            <div id="error-message" class="sib-form-message-panel" style="display:none;"></div>
+            <div id="success-message" class="sib-form-message-panel" style="display:none;"></div>
+
+            <div id="sib-container" class="sib-container--large sib-container--vertical">
+              <form id="sib-form" method="POST"
+                action="https://26dcce27.sibforms.com/serve/MUIFALkAGdbOUSaTYw1-K0UWipj0CmFxZj4QJgQjk5y09rRDW9gSrEKyXDC4hejIDEg1LY9c0pwAJ-2vZG910-9in_rGOOj03x9X_Vh6PWrjCwvOaPDumBYqzbCWAcnMtwVxYvb2goXJaVgJII_M6iVtpQPqZ5_YNf9CCx7BiOpD16T-B0EwMZJP_8yEzGxcynn5i-exWZOWDkAySQ=="
+                data-type="subscription">
+
+                <div class="brevoRow">
+                  <input class="input brevoInput" type="email" id="EMAIL" name="EMAIL"
+                    autocomplete="email" placeholder="mail@beispiel.de" required>
+
+                  <button class="button buttonPrimary brevoButton" type="submit">
+                    Anmelden
+                  </button>
+                </div>
+
+                <input type="text" name="email_address_check" value="" class="input--hidden">
+                <input type="hidden" name="locale" value="de">
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <p class="sectionText" style="margin-top:14px; font-size:14px;">
+        Du erhältst eine Bestätigungsmail. Erst danach bist du angemeldet.
+      </p>
+    </div>
+  </section>
 
 </main>
 
@@ -124,13 +167,65 @@
 </footer>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 <script>
-window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein.";
-window.LOCALE = 'de';
-var AUTOHIDE = Boolean(0);
+  const feedURL = "https://api.rss2json.com/v1/api.json?rss_url=https://letstalkaboutlifeclub.podigee.io/feed/mp3";
+
+  fetch(feedURL)
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById("episodes");
+      const episodes = (data && data.items ? data.items : []).slice(0, 3);
+
+      episodes.forEach(ep => {
+        const card = document.createElement("article");
+        card.className = "card";
+
+        const safeTitle = ep.title || "Neue Episode";
+        const safeLink = ep.link || "https://letstalkaboutlifeclub.podigee.io/";
+        const safeDesc = (ep.description || "").replace(/(<([^>]+)>)/gi, "").trim();
+        const excerpt = safeDesc.length ? safeDesc.substring(0, 140) + "..." : "";
+
+        card.innerHTML = `
+          <div class="cardTop">
+            <h3 class="cardTitle">${safeTitle}</h3>
+            <p class="cardText">${excerpt}</p>
+          </div>
+          <div class="cardBottom">
+            <a class="button buttonPrimary"
+               href="${safeLink}"
+               target="_blank"
+               rel="noopener">Jetzt hören</a>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    })
+    .catch(error => {
+      console.error("RSS Fehler:", error);
+    });
+</script>
+
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte eine Ländervorwahl aus.';
+  window.LOCALE = 'de';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
+    "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein. ";
+  window.GENERIC_INVALID_MESSAGE =
+    "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.translation = {
+    common: {
+      selectedList: '{quantity} Liste ausgewählt',
+      selectedLists: '{quantity} Listen ausgewählt',
+      selectedOption: '{quantity} ausgewählt',
+      selectedOptions: '{quantity} ausgewählt',
+    }
+  };
+  var AUTOHIDE = Boolean(0);
 </script>
 
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
