@@ -18,7 +18,7 @@
       <a href="#about">Über</a>
       <a href="#podcast">Podcast</a>
       <a href="#newsletter">Newsletter</a>
-      <a href="/innerscore">Inner Score</a>   
+      <a href="/innerscore">Inner Score</a>
     </nav>
   </div>
 </header>
@@ -113,7 +113,7 @@
     </div>
   </section>
 
-  <!-- NEWSLETTER SECTION -->
+  <!-- NEWSLETTER SECTION (Brevo stable version: do not modify IDs/classes) -->
   <section class="section" id="newsletter">
     <div class="container">
       <h2 class="sectionTitle">Newsletter</h2>
@@ -122,9 +122,10 @@
       </p>
 
       <div class="brevoWrap" style="margin-top:18px;">
-        <div class="sib-form">
+        <div class="sib-form" style="text-align:center;">
           <div id="sib-form-container" class="sib-form-container">
-            <div id="error-message" class="sib-form-message-panel">
+
+            <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
               <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
                 <span class="sib-form-message-panel__inner-text">
                   Deine Anmeldung konnte nicht gespeichert werden. Bitte versuche es erneut.
@@ -132,62 +133,55 @@
               </div>
             </div>
 
-            <div id="success-message" class="sib-form-message-panel">
+            <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
               <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
                 <span class="sib-form-message-panel__inner-text">
-                  Deine Anmeldung war erfolgreich.
+                  Danke. Bitte bestätige jetzt die E Mail in deinem Postfach.
                 </span>
               </div>
             </div>
 
-            <div id="sib-container" class="sib-container--large sib-container--vertical">
-              <form id="sib-form" method="POST"
-                action="https://26dcce27.sibforms.com/serve/MUIFALkAGdbOUSaTYw1-K0UWipj0CmFxZj4QJgQjk5y09rRDW9gSrEKyXDC4hejIDEg1LY9c0pwAJ-2vZG910-9in_rGOOj03x9X_Vh6PWrjCwvOaPDumBYqzbCWAcnMtwVxYvb2goXJaVgJII_M6iVtpQPqZ5_YNf9CCx7BiOpD16T-B0EwMZJP_8yEzGxcynn5i-exWZOWDkAySQ=="
-                data-type="subscription">
+            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
+              <form id="sib-form" method="POST" action="https://26dcce27.sibforms.com/serve/MUIFALkAGdbOUSaTYw1-K0UWipj0CmFxZj4QJgQjk5y09rRDW9gSrEKyXDC4hejIDEg1LY9c0pwAJ-2vZG910-9in_rGOOj03x9X_Vh6PWrjCwvOaPDumBYqzbCWAcnMtwVxYvb2goXJaVgJII_M6iVtpQPqZ5_YNf9CCx7BiOpD16T-B0EwMZJP_8yEzGxcynn5i-exWZOWDkAySQ==" data-type="subscription">
 
-                <div class="sib-input sib-form-block">
-                  <div class="form__entry entry_block">
-                    <div class="form__label-row">
-                      <label class="entry__label" for="EMAIL" data-required="*">
-                        E Mail Adresse
-                      </label>
+                <div style="padding: 8px 0;">
+                  <div class="sib-input sib-form-block">
+                    <div class="form__entry entry_block">
+                      <div class="form__label-row">
+                        <label class="entry__label" style="font-weight:700; text-align:left; font-size:16px; font-family:Helvetica, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">
+                          Gib deine E Mail Adresse ein, um dich anzumelden
+                        </label>
 
-                      <div class="entry__field">
-                        <input class="input" type="email" id="EMAIL" name="EMAIL"
-                          autocomplete="email" placeholder="mail@beispiel.de" data-required="true" required />
+                        <div class="entry__field">
+                          <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="mail@beispiel.de" data-required="true" required />
+                        </div>
                       </div>
-                    </div>
 
-                    <label class="entry__error entry__error--primary"></label>
+                      <label class="entry__error entry__error--primary"></label>
+                      <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4;">
+                        Du erhältst eine Bestätigungsmail. Erst danach bist du angemeldet.
+                      </label>
+                    </div>
                   </div>
                 </div>
 
-                <div class="sib-form-block" style="margin-top:10px;">
-                  <button class="button buttonPrimary" form="sib-form" type="submit">
-                    Anmelden
-                  </button>
+                <div style="padding: 8px 0;">
+                  <div class="sib-form-block" style="text-align:left;">
+                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
+                      ANMELDEN
+                    </button>
+                  </div>
                 </div>
 
                 <input type="text" name="email_address_check" value="" class="input--hidden">
                 <input type="hidden" name="locale" value="de">
               </form>
             </div>
+
           </div>
         </div>
       </div>
 
-      <!-- NEW: Custom success and error messages -->
-      <div id="ltalc-success" class="notice success" style="display:none;">
-        Danke für deine Eintragung. Bitte bestätige jetzt die E Mail in deinem Postfach.
-      </div>
-
-      <div id="ltalc-error" class="notice error" style="display:none;">
-        Das hat nicht geklappt. Bitte versuche es erneut.
-      </div>
-
-      <p class="sectionText" style="margin-top:14px; font-size:14px;">
-        Du erhältst eine Bestätigungsmail. Erst danach bist du angemeldet.
-      </p>
     </div>
   </section>
 
@@ -210,22 +204,25 @@
     .then(response => response.json())
     .then(data => {
       const container = document.getElementById("episodes");
-      const episodes = data.items.slice(0, 3);
+      const episodes = (data && data.items ? data.items : []).slice(0, 3);
 
       episodes.forEach(ep => {
         const card = document.createElement("article");
         card.className = "card";
 
+        const safeTitle = ep.title || "Neue Episode";
+        const safeLink = ep.link || "https://letstalkaboutlifeclub.podigee.io/";
+        const safeDesc = (ep.description || "").replace(/(<([^>]+)>)/gi, "").trim();
+        const excerpt = safeDesc.length ? safeDesc.substring(0, 140) + "..." : "";
+
         card.innerHTML = `
           <div class="cardTop">
-            <h3 class="cardTitle">${ep.title}</h3>
-            <p class="cardText">
-              ${ep.description.replace(/(<([^>]+)>)/gi, "").substring(0, 140)}...
-            </p>
+            <h3 class="cardTitle">${safeTitle}</h3>
+            <p class="cardText">${excerpt}</p>
           </div>
           <div class="cardBottom">
             <a class="button buttonPrimary"
-               href="${ep.link}"
+               href="${safeLink}"
                target="_blank"
                rel="noopener">Jetzt hören</a>
           </div>
@@ -240,14 +237,11 @@
 </script>
 
 <script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte eine Ländervorwahl aus.';
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Wähle bitte einen Ländervorwahl aus.';
   window.LOCALE = 'de';
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
-    "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
   window.REQUIRED_ERROR_MESSAGE = "Dieses Feld darf nicht leer sein. ";
-  window.GENERIC_INVALID_MESSAGE =
-    "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
-
+  window.GENERIC_INVALID_MESSAGE = "Die eingegebenen Informationen sind nicht gültig. Bitte überprüfe das Feldformat und versuche es erneut.";
   window.translation = {
     common: {
       selectedList: '{quantity} Liste ausgewählt',
@@ -256,43 +250,10 @@
       selectedOptions: '{quantity} ausgewählt',
     }
   };
-
   var AUTOHIDE = Boolean(0);
 </script>
 
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-
-<!-- NEW: Replace Brevo link behavior with clear on page messages -->
-<script>
-  (function () {
-    const successPanel = document.getElementById("success-message");
-    const errorPanel = document.getElementById("error-message");
-    const mySuccess = document.getElementById("ltalc-success");
-    const myError = document.getElementById("ltalc-error");
-    const formContainer = document.getElementById("sib-container");
-
-    function showSuccess() {
-      if (mySuccess) mySuccess.style.display = "block";
-      if (myError) myError.style.display = "none";
-      if (formContainer) formContainer.style.display = "none";
-    }
-
-    function showError() {
-      if (myError) myError.style.display = "block";
-      if (mySuccess) mySuccess.style.display = "none";
-    }
-
-    const obs = new MutationObserver(() => {
-      const successVisible = successPanel && successPanel.offsetParent !== null && successPanel.innerText.trim().length > 0;
-      const errorVisible = errorPanel && errorPanel.offsetParent !== null && errorPanel.innerText.trim().length > 0;
-
-      if (successVisible) showSuccess();
-      if (errorVisible) showError();
-    });
-
-    obs.observe(document.body, { childList: true, subtree: true, attributes: true });
-  })();
-</script>
 
 </body>
 </html>
